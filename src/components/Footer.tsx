@@ -30,15 +30,13 @@ export function Footer() {
       <div className="max-w-[1200px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
-            <div className="inline-block bg-white rounded-lg px-3 py-1.5 mb-4">
-              <Image
-                src="/applicant_logo_transparent.png"
-                alt="Applicant Mortgage Brokers"
-                width={160}
-                height={44}
-                className="block"
-              />
-            </div>
+            <Image
+              src="/mainlogo_allwhite.png"
+              alt="Applicant Mortgage Brokers"
+              width={180}
+              height={120}
+              className="block mb-4"
+            />
             <p className="text-white/50 text-sm leading-relaxed">
               Approachable and friendly mortgage advice, based in High Wycombe.
               Whole of market, fee-free, and always in your corner.

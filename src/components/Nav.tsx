@@ -198,16 +198,14 @@ export function Nav() {
     <nav className="bg-navy-deep sticky top-0 z-50 px-6 lg:px-12">
       <div className="flex items-center justify-between h-20 max-w-[1400px] mx-auto">
         <Link href="/" className="flex items-center shrink-0">
-          <div className="bg-white rounded-md px-2.5 py-1 shadow-[0_2px_8px_rgba(0,0,0,0.15)]">
-            <Image
-              src="/applicant_logo_transparent.png"
-              alt="Applicant Mortgage Brokers"
-              width={110}
-              height={44}
-              priority
-              className="block"
-            />
-          </div>
+          <Image
+            src="/mainlogo_white_blueroof.png"
+            alt="Applicant Mortgage Brokers"
+            width={150}
+            height={100}
+            priority
+            className="block"
+          />
         </Link>
 
         <ul className="hidden lg:flex items-center gap-6">

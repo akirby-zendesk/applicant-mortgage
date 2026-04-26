@@ -1,6 +1,6 @@
 import jsPDF from "jspdf";
 import type { RiskRealityResult } from "./calculators";
-import { LOGO_DATA_URL } from "./logoData";
+import { LOGO_WHITE_DATA_URL, LOGO_BLUE_DATA_URL } from "./logoData";
 
 interface PdfInput {
   name: string;
@@ -57,7 +57,7 @@ export function generateRiskPdf(input: PdfInput) {
   doc.setFillColor(NAVY_DEEP);
   doc.rect(0, 0, pageW, 70, "F");
 
-  doc.addImage(LOGO_DATA_URL, "PNG", margin, 8, 50, 20);
+  doc.addImage(LOGO_WHITE_DATA_URL, "PNG", margin, 8, 50, 33);
 
   doc.setFont("helvetica", "bold");
   doc.setFontSize(22);
@@ -335,8 +335,8 @@ export function generateRiskPdf(input: PdfInput) {
   doc.line(margin, y, pageW - margin, y);
   y += 8;
 
-  doc.addImage(LOGO_DATA_URL, "PNG", margin, y, 45, 18);
-  y += 22;
+  doc.addImage(LOGO_BLUE_DATA_URL, "PNG", margin, y, 45, 30);
+  y += 34;
   doc.setFont("helvetica", "normal");
   doc.setFontSize(8);
   doc.setTextColor(SLATE);
